@@ -1,0 +1,23 @@
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="graphics.css">
+    <title>magnetic field</title>
+  </head>
+
+  <body>
+
+    <center>
+      <canvas id="canvas" width="500" height="500"></canvas><br>
+    </center>
+    Length of solenoid:<input type="text" id="length" value="0.06"><br>
+    Radius of solenoid:<input type="text" id="radius" value="0.0333"><br>
+    Core permeability: <input type="text" id="perm" value="1"><br>
+    Total turns: <input type="text" id="turns" value="200"><br>
+    Current: <input type="text" id="current" value="-1"><br>
+    Resolution of plane: <input type="text" id="resolution" value="0.1">
+    <button type="button" name="button" onclick="cartesianPlane()">refresh</button>
+    <script src="plane.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      tabs
+    </title>
+    <link rel="stylesheet" href="tabs.css">
+  </head>
+  <body>
+    <div class="tabs">
+        <button class="tablinks" id="zero" onclick="openCity(event,'slide0')">Home</button>
+        <button class="tablinks" id="one" onclick="openCity(event,'slide1')">Random Page</button>
+        <button class="tablinks" id="two" onclick="openCity(event,'slide2')">Moving square</button>
+        <button class="tablinks" id="three" onclick="openCity(event,'slide3')">Tackle</button>
+        <button class="tablinks" id="four" onclick="openCity(event,'slide4')">Rotator boi</button>
+        <button class="tablinks" id="five" onclick="openCity(event,'slide5')">Speak</button>
+        <button class="tablinks" id="six" onclick="openCity(event,'slide6')">Popups</button>
+        <button class="tablinks" id="seven" onclick="openCity(event,'slide7')">3D</button>
+    </div>
+    <div class="tabinside" id="slide0">
+      <div id="load">
+        <div id="side1"></div>
+        <div id="side2"></div>
+        <div id="side3"></div>
+        <div id="side4"></div>
+        <div id="side5"></div>
+        <div id="side6"></div>
+      </div>
+      <strong><p id="LoadingTxt">Loading . . .</p></strong>
+      <div id="hold" >
+        <center>
+          <h1 align="center">Home Page</h1>
+          <p>Shameless advert</p>
+        </center>
+      </div>
+    </div>
+    <div class="tabinside" id="slide1">
+      <h1 align="center">LOL</h1>
+      <p align="center">BUY GAMEZ</p>
+    </div>
+    <div class="tabinside" id="slide2">
+      <h3>Animation 1</h3>
+      <div class="animation" id="animationOne"></div>
+    </div>
+    <div class="tabinside" id="slide3">
+      <h3>Animation 2</h3>
+      <div class="animation" id="animationTwo"></div>
+    </div>
+    <div class="tabinside" id="slide4">
+      <h3>Animation 3</h3>
+      <div class="animation" id="animationThree"></div>
+    </div>
+    <div class="tabinside" id="slide5">
+      <h3>Click the button</h3>
+      <div class="speech-test" id="speech-text">
+        <textarea placeholder="Text to say . . ." class="s-psw" type="text" name="" id="say-input"></textarea>
+        <button onclick="sayItOutLoud('say-input');" class="s-btn">Say it</button>
+      </div>
+    </div>
+    <div class="tabinside" id="slide6">
+      <h3>POPUPS!!!</h3>
+      <button type="button" onclick="popup()">popups</button>
+    </div>
+    <div class="tabinside" id="slide7">
+      <h3 align="center">Cube</h3>
+      <div id="D3Cube">
+        <div id="side1"></div>
+        <div id="side2"></div>
+        <div id="side3"></div>
+        <div id="side4"></div>
+        <div id="side5"></div>
+        <div id="side6"></div>
+      </div>
+    </div>
+    <script src="tabs.js" charset="utf-8"></script>
+    <script>loadWebpage();</script>
+  </body>
+</html>

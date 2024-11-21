@@ -1,0 +1,16 @@
+body{
+  color:#fbfbfb6f;
+  background-color: black;
+}
+canvas{
+  color:white;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+ }
+ input[type = text]{
+   color:#FFFFFF;
+   background-color:#fbfbfb33;
+   border-style:solid;
+   border-color:black;
+ }

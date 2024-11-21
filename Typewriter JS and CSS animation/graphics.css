@@ -1,0 +1,25 @@
+body{
+color:#bfbfbf;
+background-color:black;
+}
+.First{
+  animation: fadein 2s;
+}
+
+.second{
+  transition-delay: 3s;
+}
+button{
+  animation: fadein 8s;
+}
+#written{
+  display: none;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

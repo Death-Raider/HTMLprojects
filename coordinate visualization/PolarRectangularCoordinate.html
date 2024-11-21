@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="P-R-coordinate.css">
+    <title>Polar-Rectangular coordinates</title>
+  </head>
+  <body>
+    <!-- canvas-->
+    <center>
+      <h1>CIRCLE</h1>
+      height of graph:<input type="text" size="1" id="height" value="200"><br>
+      width of graph:<input type="text" size="1" id="width" value="300"><br>
+      <button onclick="refresh()">click to re-size canvas</button><br>
+      <canvas id="plane" height="180" width="180"></canvas>
+    </center>
+
+    <!-- for rectangualr coordinates -->
+    Rectangular Co-ordinate:<br>
+    X-coordinate: <input type="text" id="rectangularPointX" value="0"><br>
+    Y-coordinate: <input type="text" id="rectangularPointY" value="0"><br>
+    angle of point from +ve Y-axis (polar form):<input type="text" id="rect-pol-angle" value="0" disabled><br>
+    radius to point (polar form):<input type="text" id="rect-pol-radius" value="0" disabled><br>
+    <button onclick="rectangularTrue()">click to plot rectangular coordinate</button><br>
+
+    <!-- for polar coordinates -->
+    Polar Co-ordinate:<br>
+    angle from +ve Y-axis :<input type="text" id="angle" value="0"><br>
+    radius:<input type="text" id="radius" value="0"><br>
+    X coordinate of polar point:<input type="text" id="X-axis-polar" value="0" disabled><br>
+    Y coordinate of polar point:<input type="text" id="Y-axis-polar" value="0" disabled><br>
+    <button onclick="polarTrue()">click to plot polar coordinate</button><br>
+    <script src="coordinate.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,161 @@
+/*body style*/
+body{
+  background-color: #a99de8;
+}
+
+#animationOne {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#animationTwo{
+  width: 223px;
+  height: 226px;
+  background-image: url(images.png);
+  position: relative;
+  animation-name: animated_div;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+#animationThree{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: red;
+  animation-name: examplepp;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+#hold{
+  display: none;
+  text-align: left;
+  position: relative;
+  animation-name: animatebottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+#LoadingTxt{
+  display: none;
+  width: 100px;
+  position: fixed;
+  top: 300px;
+  left: 640px;
+}
+#D3Cube, #load{
+  width: 112px;
+  height: 112px;
+  top: 150px;
+  transform-style: preserve-3d;
+  transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);
+  margin: auto;
+  position: relative;
+  display:block;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  animation-name: cubeRotation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#D3Cube > div, #load > div{
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  width: 112px;
+  height: 112px;
+  float: left;
+  overflow: hidden;
+  opacity: 0.8;
+}
+#side1 {
+  transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
+  background-color: white;
+}
+#side2 {
+  transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+  background-color: orange;
+}
+#side3 {
+  transform: translateX(0px) translateY(0px) translateZ(56px);
+  background-color: green;
+}
+#side4 {
+  transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+  background-color: red;
+}
+#side5 {
+  transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+  background-color: blue;
+}
+#side6 {
+  transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+  background-color: yellow;
+}
+@keyframes cubeRotation {
+    0% {transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);}
+    50% {transform: rotateX(-22deg) rotateY(-238deg) rotateZ(180deg);}
+    100% {transform: rotateX(-22deg) rotateY(-398deg) rotateZ(360deg);}
+}
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:300px; top:0px;}
+  50%  {background-color:blue; left:300px; top:300px;}
+  75%  {background-color:green; left:0px; top:300px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes animated_div {
+  0% {transform: rotate(0deg);left:0px;}
+  25% {transform: rotate(20deg);left:0px;}
+  50% {transform: rotate(0deg);left:500px;}
+  55% {transform: rotate(0deg);left:500px;}
+  70% {transform: rotate(0deg);left:500px;}
+  100% {transform: rotate(-360deg);left:0px;}
+}
+@keyframes examplepp {
+  0% {transform: rotate(-360deg);top:0px;left:0px;}
+  25% {transform: rotate(0deg);top:0px;left:200px;}
+  50% {transform: rotate(360deg); top:200px; left:200px;}
+  75% {transform: rotate(0deg); top:200px; left:0px;}
+  100% {transform: rotate(-360deg); top:0px; left:0px;}
+}
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+/* Style the tab */
+.tabs {
+  overflow: hidden;
+  width:match-parent;
+  height:50px;
+  background-color: #d1d7fd;
+}
+/* Style the buttons that are used to open the tab content */
+.tabs button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height:50px;
+  width:150px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  background-color: white;
+}
+/* Create an active/current tablink class */
+.tabs button.active {
+  background-color:#c0c8ff;
+}
+/* Style the tab content */
+.tabinside {
+  display: none;
+}
